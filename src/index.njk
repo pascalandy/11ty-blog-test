@@ -38,9 +38,8 @@ layout: "base.njk"
     </p>
     <ul role="list" class="articles__list flow">
       <li>
-        {%- for post in collections.featured | reverse -%}
-        {% include 'article_snippet.njk' %}
-        {%- endfor -%}
+        {%- for post in collections.featured | reverse -%} {% include
+        'article_snippet.njk' %} {%- endfor -%}
       </li>
     </ul>
   </div>
