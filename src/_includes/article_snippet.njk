@@ -5,9 +5,12 @@
       alt="{{ post.data.imageAlt }}"
       class="snippet__image"
     />
-    <h3 class="snippet__title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+    <h3 class="snippet__title">
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </h3>
     <p class="snippet__meta">
-      by <span>{{ post.data.author }}</span> on <span>{{ post.date | postDate }} </span>
+      by <span>{{ post.data.author }}</span> on
+      <span>{{ post.date | postDate }} </span>
     </p>
     <p class="snippet__body">
       by <span>{{ post.data.description }}</span>
